@@ -6,6 +6,8 @@
 
 public class Thermometer{
     public static void main(String[] args) {
+        System.out.println("Hello and welcome to the Themometer demo!\n" +
+                           "This program will demonstrate the ability to calculate the Voltage read by a voltmeter in water given a Temperature with some initial conditions");
         PrintVoltageWater VoltageWater = new PrintVoltageWater (20,75,50,0.5);
         System.out.println("T\tvm");
         System.out.println ("-----\t-----");
