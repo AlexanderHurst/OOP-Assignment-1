@@ -1,7 +1,14 @@
 import java.text.DecimalFormat;
-
+/**
+* This class uses WoodenBeam to calculate the maximum load that a wooden
+* beam will be able to hold on the end
+* @author Alexander Hurst
+*/
 public class MaxLoadCalculator{
     public static void main(String[] args) {
+        System.out.println("Hello and welcome to the Max Load Calculator demo program!\n" +
+                           "This program will demonstrate the ability to calculate the max load that a wooden beam can hold.\n");
+
         // Create a beam object using it’s length, base and height  
         WoodenBeam wb1 = new WoodenBeam(8.0, 2.0, 4.0);
         WoodenBeam wb2 = new WoodenBeam(8.0, 3.0, 6.0);
@@ -14,9 +21,13 @@ public class MaxLoadCalculator{
         System.out.println();
         System.out.println("For Beam #2: ");
         printBeamInfo(wb2, stress);
-        System.out.println();
     }
 
+    /**
+    * This method prints out all of the information about a wooden beam
+    * @param woodenBeam The wooden beam object to print the information for
+    * @param stress The maximum amount of stress that the beam can maintain
+    */
     public static void printBeamInfo(WoodenBeam woodenBeam, double stress){
         DecimalFormat twoDecimals = new DecimalFormat();
         twoDecimals.setMaximumFractionDigits(2);
