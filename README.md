@@ -1,4 +1,4 @@
-## OOP-Assignment-1
+## `OOP-Assignment-1`
 ---
 First assignment for OOP
 
@@ -20,26 +20,26 @@ The output will be two columns of numbers labelled T for Temperature and Vm for 
 ---
 ## Compilation
 Compile with
-'''bash
+```bash
 coming soon
-'''
+```
 and run as
-'''bash
+```bash
 coming soon
-'''
+```
 ## Output
 Coming soon
 
 ## Question 3
----
+```
 ## Compilation
 Compile with
-'''bash
+```bash
 coming soon
-'''
+```
 and run as
-'''bash
+```bash
 coming soon
-'''
+```
 ## Output
 Coming soon
