@@ -31,7 +31,7 @@ coming soon
 Coming soon
 
 ## Question 3
-```
+---
 ## Compilation
 Compile with
 ```bash
