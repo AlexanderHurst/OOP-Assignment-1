@@ -16,7 +16,7 @@ public class WoodenBeam{
     * Constructor method
     * @param length The length in feet of the beam and where the weight will be
     * @param base The base or width in inches of the beam
-    * @param height The height of the beam
+    * @param height The height in inches of the beam
     */
     public WoodenBeam(double length, double base, double height){
         this.length=length;
@@ -28,7 +28,7 @@ public class WoodenBeam{
     }
 
     /**
-    * @param length The value to set the new length to
+    * @param length The value in feet to set the new length to
     */
     public void setLength(double length){
         this.length=length;
@@ -36,14 +36,14 @@ public class WoodenBeam{
     }
 
     /**
-    * @return The length of the beam
+    * @return The length in feet of the beam
     */
     public double getLength(){
         return this.length;
     }
 
     /**
-    * @param base The value to set the new base or width to
+    * @param base The value in inches to set the new base or width to
     */
     public void setBase(double base){
         this.base=base;
@@ -51,14 +51,14 @@ public class WoodenBeam{
     }
 
     /**
-    * @return The base or width of the beam
+    * @return The base or width in inches of the beam
     */
     public double getBase(){
         return this.base;
     }
 
     /**
-    * @param height The value to set the new height to
+    * @param height The value in inches to set the new height to
     */
     public void setHeight(double height){
         this.height=height;
@@ -67,7 +67,7 @@ public class WoodenBeam{
     }
 
     /** 
-    * @return The height of the beam
+    * @return The height in inches of the beam
     */
     public double getHeight(){
         return this.height;
@@ -78,7 +78,7 @@ public class WoodenBeam{
     }
 
     /**
-    * @return The moment of inertia of the beam
+    * @return The moment of inertia in in^4 of the beam
     */
     public double getInertia(){
         return this.inertia;
@@ -89,7 +89,7 @@ public class WoodenBeam{
     }
 
     /**
-    * @return The centroid of the beam
+    * @return The centroid in inches of the beam
     */
     public double getCentroid(){
         return this.centroid;
@@ -99,16 +99,18 @@ public class WoodenBeam{
         this.distance=this.length*12;
     }
 
+    /**
+    * @return The distance in inches to the weight on the beam
+    */
     public double getDistance(){
         return this.distance;
     }
     
     /**
-    * This method takes the desired maximum stress to the beam
-    * and returns the max amount of load that the beam can
-    * take to be within that amount of stress
-    * @param stress The stress that the beam can maintain
-    * @return the max load that the beam can hold
+    * This method takes the desired maximum stress to the beam and
+    * returns the max amount of load that can be placed on the end of the beam
+    * @param stress The stress in lbs per square inch that the beam can maintain
+    * @return the max load in lbs that the beam can hold at the end
     */
     double computeMaxLoad(double stress){
         return (stress * this.inertia)/(this.distance * this.centroid);
