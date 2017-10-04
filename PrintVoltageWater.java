@@ -1,5 +1,5 @@
 /**
-* The PrintVoltageWater program uses some basic information
+* The PrintVoltageWater class uses some basic information
 * to calculate voltage on a voltmeter or temperature of water
 * @author Alexander Hurst
 */

@@ -1,5 +1,5 @@
 /**
-* The Thermometer program uses PrintVoltageWater to calculate
+* The Thermometer class uses PrintVoltageWater to calculate
 * the voltage on a voltmeter or temperature of water
 * @author Alexander Hurst
 */
