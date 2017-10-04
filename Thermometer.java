@@ -1,3 +1,9 @@
+/**
+* The Thermometer program uses PrintVoltageWater to calculate
+* the voltage on a voltmeter or temperature of water
+* @author Alexander Hurst
+*/
+
 public class Thermometer{
     public static void main(String[] args) {
         PrintVoltageWater VoltageWater = new PrintVoltageWater (20,75,50,0.5);
