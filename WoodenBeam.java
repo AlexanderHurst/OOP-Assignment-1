@@ -32,6 +32,7 @@ public class WoodenBeam{
     */
     public void setLength(double length){
         this.length=length;
+        this.setDistance();
     }
 
     /**
