@@ -37,14 +37,15 @@ The output will be the all of the entered information as well as the information
 ---
 ## `Question 3`
 ---
+This program allows a user to enter the length and gauge of a wire and it will print what the resistance of that wire in copper as well as aluminum would be.
 ## Compilation
 Compile with
 ```bash
-coming soon
+javac CalcWireResistance.java
 ```
 and run as
 ```bash
-coming soon
+java CalcWireResistance
 ```
 ## Output
-Coming soon
+The output will be a quick summery of what the user entered as well as the resistance of the wire
