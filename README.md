@@ -48,4 +48,4 @@ and run as
 java CalcWireResistance
 ```
 ## Output
-The output will be a quick summery of what the user entered as well as the resistance of the wire
+The output will be a quick summary of what the user entered as well as the resistance of the wire
